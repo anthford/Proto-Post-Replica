@@ -1,0 +1,65 @@
+/*-----------------
+GLOBAL STYLING
+-----------------*/
+
+body {
+  background-color: black;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*-----------------
+INDEX STYLING
+-----------------*/
+
+#NewSeattle {
+  height: 100%;
+}
+
+/*-----------------
+TABLE STYLING
+-----------------*/
+
+#tableSetting {
+  background-image: url("./images/Pair-Final.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#mission, #letter, #fight {
+  width: 125px;
+  background: #373b3d;
+  background-image: -webkit-linear-gradient(top, #373b3d, #606161);
+  background-image: -moz-linear-gradient(top, #373b3d, #606161);
+  background-image: -ms-linear-gradient(top, #373b3d, #606161);
+  background-image: -o-linear-gradient(top, #373b3d, #606161);
+  background-image: linear-gradient(to bottom, #373b3d, #606161);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#mission:hover, #letter:hover, #fight:hover {
+  background: #105727;
+  background-image: -webkit-linear-gradient(top, #105727, #20701c);
+  background-image: -moz-linear-gradient(top, #105727, #20701c);
+  background-image: -ms-linear-gradient(top, #105727, #20701c);
+  background-image: -o-linear-gradient(top, #105727, #20701c);
+  background-image: linear-gradient(to bottom, #105727, #20701c);
+  text-decoration: none;
+}
+
+.glyphicon {
+  padding: 2px;
+  background-color: none;
+}

@@ -12,6 +12,10 @@ get '/mission' do
   erb :mission
 end
 
-get '/fight' do
+get '/letter' do
+  erb :letter
+end
 
+get '/fight' do
+  erb :fight
 end

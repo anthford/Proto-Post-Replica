@@ -6,18 +6,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src = "/table.js"></script>
-  <!-- bootstrap stylesheets, mobile responsive meta tag -->
+  <!-- bootstrap stylesheets, mobile responsive meta tag, css stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 
   <body>
-    <div class = "container-fluid" id = "tableBackground">
+    <div class = "container-fluid" id = "tableSetting">
       <div class = "row">
-        <img src = "./images/Pair-Final.jpg" alt = "AndroidPair" id = "AndroidPair">
-        <button id = "mission">Mission</button>
-        <button id = "letters">Letter</button>
-        <button id = "fight">Fight</button>
+        <div class = "col-md-2" id = "backDiv">
+          <form action = "/" method = "GET">
+            <button id = "back">
+              <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-3" id = "missionDiv">
+          <form action = "/mission" method = "GET">
+            <button id = "mission">Mission</button>
+          </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-3" id = "letterDiv">
+          <form action = "/letter" method = "GET">
+            <button id = "letter">Letter</button>
+          </form>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-md-3" id = "fightDiv">
+          <form action = "/fight" method = "GET">
+            <button id = "fight">Fight</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
