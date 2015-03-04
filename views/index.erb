@@ -1,13 +1,30 @@
 <html>
   <head>
-    <title></title>
+    <title>Home</title>
   </head>
+  <script src = "/index.js"></script>
+
   <style>
     body {
-      background-image: url('./Slum-Rough Sketch.jpg')
+      background-color: black;
+    }
+    .container {
+      text-align: center;
+      margin: 0 auto;
+    }
+    #NewSeattle {
+      height: 100%;
     }
   </style>
-  <body>
 
+  <body>
+    <div class = "container" id = "background">
+      <img src = "./images/Slum-Final.jpg" alt = "NewSeattle" usemap = "NewSeattleMap"  id = "NewSeattle">
+      <map name = "NewSeattleMap">
+        <area shape = "rect" id = "village1" href = '/table'>
+        <area shape = "rect" id = "city1" href = '/table'>
+      </map>
+    </div>
   </body>
+
 </html>

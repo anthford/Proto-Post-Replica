@@ -5,19 +5,13 @@ get '/' do
 end
 
 get '/table' do
-
-end
-
-get '/misson' do
-
-end
-
-get '/fight' do
-
+  erb :table
 end
 
 get '/mission' do
+  erb :mission
 end
 
 get '/fight' do
+
 end
