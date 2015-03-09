@@ -16,6 +16,10 @@ get '/letter' do
   erb :letter
 end
 
+get '/rumor' do
+  erb :rumor
+end
+
 get '/fight' do
   erb :fight
 end
