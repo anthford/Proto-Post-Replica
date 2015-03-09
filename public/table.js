@@ -31,10 +31,10 @@ window.addEventListener('load', function() {
   document.getElementById("letterDiv").style.paddingTop = letterTopPx;
   document.getElementById("letterDiv").style.paddingLeft = letterLeftPx;
 
-  // set padding for fight button (will respond to size of div and therefore size of screen)
-  var fightTopPx = 0.10*height.toString() + "px";
-  var fightLeftPx = 0.15*width.toString() + "px";
-  document.getElementById("fightDiv").style.paddingTop = fightTopPx;
-  document.getElementById("fightDiv").style.paddingLeft = fightLeftPx;
+  // set padding for rumor button (will respond to size of div and therefore size of screen)
+  var rumorTopPx = 0.05*height.toString() + "px";
+  var rumorLeftPx = 0.20*width.toString() + "px";
+  document.getElementById("rumorDiv").style.paddingTop = rumorTopPx;
+  document.getElementById("rumorDiv").style.paddingLeft = rumorLeftPx;
 
 })
