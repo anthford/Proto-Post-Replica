@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'pry'
+require_relative './lib/connection'
+require_relative './lib/missions'
 
 get '/' do
   erb :index
@@ -9,7 +12,11 @@ get '/table' do
 end
 
 get '/mission' do
-  erb :mission
+  erb :mission, locals: { missions: Mission.all() }
+end
+
+get '/mission/ignore' do
+  redirect '/table'
 end
 
 get '/letter' do

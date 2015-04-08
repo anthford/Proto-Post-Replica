@@ -1,5 +1,10 @@
 CREATE TABLE missions(
   id INTEGER PRIMARY KEY,
-  mission_text TEXT,
+  title TEXT,
+  description TEXT,
+  image TEXT,
+  nemesis TEXT,
+  resolve INTEGER,
+  tactics TEXT,
   taken BOOLEAN
 );

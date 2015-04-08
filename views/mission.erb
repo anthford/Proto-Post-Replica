@@ -1,8 +1,57 @@
 <html>
   <head>
-    <title></title>
+    <title>Mission Detail</title>
   </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src = '/mission.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <body>
-    <h1>Test</h1>
+    <div id = "missionDetail" class = "show">
+      <% length = missions.length %>
+      <% rand = rand(0...length) %>
+      <div id = "missionDetailContent">
+        <h1><%= missions[rand].description %></h1>
+        <br><br>
+        
+        <button id = "acceptMission">ACCEPT</button>
+        <br><br>
+
+        <form action = "/mission/ignore" method = "GET">
+          <button id = "ignoreMission">IGNORE</button>
+        </form>
+      </div>
+    </div>
+
+    <div id = "missionExecution" class = "hide">
+      <div class = "row">
+        <div class = "col-md-5 col-md-offset-1">
+          <img id = "missionImage" src = <%= missions[rand].image %> />
+        </div>
+        <div class = "col-md-5">
+          <h2 id = "missionTitle"><%= missions[rand].title %></h2>
+        </div>
+        <br>
+        <div class = "col-md-5">
+          <h3 id = "missionNemesis"><%= missions[rand].nemesis %></h3>
+        </div>
+        <div class = "col-md-5">
+          <h4 id = "missionResolve">Resolve: <%= missions[rand].resolve %></h4>
+        </div>
+        <div class = "col-md-5">
+          <h4 id = "missionTactic">Tactics:</h4>
+          <ul id = "missionTacticList">
+            <% tactics = missions[rand].tactics.split(",") %>
+            <% tactics.each do |tactic| %>
+              <li><%= tactic %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

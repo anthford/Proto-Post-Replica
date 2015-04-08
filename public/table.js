@@ -18,7 +18,6 @@ window.addEventListener('load', function() {
   document.getElementById("backDiv").style.paddingTop = backTopPx;
   document.getElementById("backDiv").style.paddingLeft = backLeftPx;
 
-
   // set padding for mission button (will respond to size of div and therefore size of screen)
   var missionTopPx = 0.10*height.toString() + "px";
   var missionLeftPx = 0.23*width.toString() + "px";
