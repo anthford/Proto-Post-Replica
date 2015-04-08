@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS missions;
 CREATE TABLE missions(
   id INTEGER PRIMARY KEY,
   title TEXT,
