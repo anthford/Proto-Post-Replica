@@ -9,3 +9,17 @@ CREATE TABLE missions(
   tactics TEXT,
   taken BOOLEAN
 );
+
+DROP TABLE IF EXISTS rumors;
+CREATE TABLE rumors(
+	id INTEGER PRIMARY KEY,
+	title TEXT,
+	description TEXT
+);
+
+DROP TABLE IF EXISTS letters;
+CREATE TABLE letters(
+	id INTEGER PRIMARY KEY,
+	title TEXT,
+	description TEXT
+);
