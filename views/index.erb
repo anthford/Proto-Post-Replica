@@ -2,17 +2,54 @@
   <head>
     <title>Home</title>
   </head>
+  <!-- bootstrap and js script files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src = "/index.js"></script>
+  <!-- bootstrap stylesheets, mobile responsive meta tag, css stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/style.css">
 
-  <body>
-    <div class = "container" id = "background">
-      <img src = "./images/Slum-Final.jpg" alt = "NewSeattle" usemap = "NewSeattleMap"  id = "NewSeattle">
+  <!-- /*<style>
+    body {
+      background-image: url("./images/PR-landscape.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>*/ -->
+  <body id = "indexBody">
+    <!-- <div class = "container" id = "background">
+      <img src = "./images/PR-landscape.jpg" alt = "NewSeattle" usemap = "NewSeattleMap"  id = "NewSeattle">
       <map name = "NewSeattleMap">
         <area shape = "rect" id = "village1" href = '/table'>
         <area shape = "rect" id = "city1" href = '/table'>
       </map>
+    </div>   -->
+    
+    <div class = "row">
+      <div class = "col-md-3" id = "cityDiv">
+        <form action = "/table" method = "GET">
+          <button id = "city">City</button>
+        </form>
+      </div>
     </div>
+    <div class = "row">
+      <div class = "col-md-3" id = "settlementDiv">
+        <form action = "/table" method = "GET">
+          <button id = "settlement">Settlement</button>
+        </form>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-md-3" id = "wildsDiv">
+        <form action = "/table" method = "GET">
+          <button id = "wilds">Wilds</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 
 </html>
