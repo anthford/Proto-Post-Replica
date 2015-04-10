@@ -1,5 +1,7 @@
 require_relative './lib/connection'
 require_relative './lib/missions'
+require_relative './lib/rumors'
+require_relative './lib/letters'
 
 Mission.create({
   title: "Power Source Low",
