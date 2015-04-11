@@ -2,6 +2,9 @@ require 'sinatra'
 require 'pry'
 require_relative './lib/connection'
 require_relative './lib/missions'
+require_relative './lib/notes'
+require_relative './lib/rumors'
+
 
 get '/' do
   erb :index
@@ -20,11 +23,11 @@ get '/mission/ignore' do
 end
 
 get '/letter' do
-  erb :letter
+  erb :letter, locals: { letters: Note.all() }
 end
 
 get '/rumor' do
-  erb :rumor
+  erb :rumor, locals: { rumors: Rumor.all() }
 end
 
 get '/fight' do

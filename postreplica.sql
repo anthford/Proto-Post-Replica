@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS missions;
 CREATE TABLE missions(
   id INTEGER PRIMARY KEY,
   title TEXT,
@@ -10,15 +9,13 @@ CREATE TABLE missions(
   taken BOOLEAN
 );
 
-DROP TABLE IF EXISTS rumors;
 CREATE TABLE rumors(
 	id INTEGER PRIMARY KEY,
 	title TEXT,
 	description TEXT
 );
 
-DROP TABLE IF EXISTS letters;
-CREATE TABLE letters(
+CREATE TABLE notes(
 	id INTEGER PRIMARY KEY,
 	title TEXT,
 	description TEXT

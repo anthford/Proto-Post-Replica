@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+.backDiv {
+  margin-top: 10px;
+}
+
 /*-----------------
 INDEX STYLING
 -----------------*/
@@ -156,6 +160,22 @@ MISSION STYLING
 }
 
 #missionImage {
-  width: 500px;
+  width: 75%;
   border-radius: 10px;
+}
+
+/*-----------------
+LETTER STYLING
+-----------------*/
+
+#letterDetail, #rumorDetail {
+  padding-top: 5%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#letterDetailContent, #rumorDetailContent {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
 }

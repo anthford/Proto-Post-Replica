@@ -16,7 +16,7 @@
       <div id = "missionDetailContent">
         <h1><%= missions[rand].description %></h1>
         <br><br>
-        
+
         <button id = "acceptMission">ACCEPT</button>
         <br><br>
 
@@ -27,21 +27,31 @@
     </div>
 
     <div id = "missionExecution" class = "hide">
+      <div class = "container-fluid" id = "missionSetting">
+        <div class = "row">
+          <div class = "col-md-2 col-md-offset-1" class = "backDiv">
+            <form action = "/table" method = "GET">
+              <button id = "back">
+                <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
       <div class = "row">
         <div class = "col-md-5 col-md-offset-1">
           <img id = "missionImage" src = <%= missions[rand].image %> />
         </div>
-        <div class = "col-md-5">
+        <div class = "col-md-4">
           <h2 id = "missionTitle"><%= missions[rand].title %></h2>
         </div>
         <br>
-        <div class = "col-md-5">
+        <div class = "col-md-4">
           <h3 id = "missionNemesis"><%= missions[rand].nemesis %></h3>
         </div>
-        <div class = "col-md-5">
+        <div class = "col-md-4">
           <h4 id = "missionResolve">Resolve: <%= missions[rand].resolve %></h4>
         </div>
-        <div class = "col-md-5">
+        <div class = "col-md-4">
           <h4 id = "missionTactic">Tactics:</h4>
           <ul id = "missionTacticList">
             <% tactics = missions[rand].tactics.split(",") %>

@@ -1,7 +1,7 @@
 require_relative './lib/connection'
 require_relative './lib/missions'
 require_relative './lib/rumors'
-require_relative './lib/letters'
+require_relative './lib/notes'
 
 Mission.create({
   title: "Power Source Low",
@@ -73,34 +73,32 @@ Rumor.create({
   description: "We are setting up a base in your town, but the location is secret. If you find it, you'll have the upper hand!"
   });
 
-Letter.create({
+Note.create({
   title: "To Walker",
   description: "There's an android in town that is going to let Buzzers attack... you have to find him and stop him."
   });
 
-Letter.create({
+Note.create({
   title: "To Gilles",
   description: "I'm one of the androids you tried to hunt down for the Reclaimers before you 'got free.' I don't believe it for a second. I'm coming for you!"
   });
 
-Letter.create({
+Note.create({
   title: "To Dar",
   description: "If you're looking for a fight, there's a nest of Buzzers to the south of town."
   });
 
-Letter.create({
+Note.create({
   title: "To Cullen",
   description: "I hear you can stop Buzzers from a distance. Our village could really use someone like you... There's a nest in between our towns, northwest of you."
   });
 
-Letter.create({
+Note.create({
   title: "To Brylle",
   description: "Someone with your skills needs to help. There's a human here running for Mayor who is taking a very hard line against androids... he's talking about weekly screenings. Please come help!"
   });
 
-Letter.create({
+Note.create({
   title: "To Alexi",
   description: "The Reclaimers in your town are setting up shop in the house next to the bakery. Very few know about the secret base, so it isn't well defended. Hit them hard, friend."
   });
-
-

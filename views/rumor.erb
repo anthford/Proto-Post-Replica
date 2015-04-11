@@ -1,8 +1,39 @@
 <html>
   <head>
-    <title></title>
+    <title>Rumor</title>
   </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <body>
-    <h1>Test</h1>
+    <div id = "rumorDetail">
+      <% length = rumors.length %>
+      <% rand = rand(0...length) %>
+
+      <div id = "rumorDetailContent">
+
+        <div class = "row">
+          <div class = "col-md-2 col-md-offset-1" class = "backDiv">
+            <form action = "/table" method = "GET">
+              <button id = "back">
+                <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <h1><%= rumors[rand].title %></h1>
+        <br><br>
+        <p><%= rumors[rand].description %></p>
+        <br><br>
+
+        <form action = "/table" method = "GET">
+          <button class = "return">Return</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
